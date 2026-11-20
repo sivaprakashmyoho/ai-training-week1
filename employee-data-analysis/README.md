@@ -135,3 +135,36 @@ The dataset contains four records. Department, gender, age,
 and salary values were added as illustrative sample data
 for practice purposes. Therefore, the findings are not
 representative of a real company's workforce.
+
+## Part 2 – Employee Data Visualisation
+
+### Project Overview
+Created five visualisations using Python, Pandas, Matplotlib and Seaborn to analyse the IBM HR Employee Attrition dataset.
+
+### Dataset Information
+- Total Records: 1,470
+- Total Columns: 35
+- Missing Values: 0
+
+### Visualisations
+1. **Bar Chart:** Employee Count by Department
+2. **Histogram:** Employee Age Distribution
+3. **Scatter Plot:** Monthly Income vs Years at Company
+4. **Line Chart:** Sorted Employee Monthly Income
+5. **Heatmap:** Employee Data Correlation
+
+### Tools and Technologies
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+### Project Outputs
+All five visualisation images are saved in `reports/figures/`.
+
+### Key Learning Outcomes
+- Data visualisation using Matplotlib and Seaborn
+- Understanding employee data distributions
+- Analysing relationships between numerical variables
+- Communicating insights through charts
