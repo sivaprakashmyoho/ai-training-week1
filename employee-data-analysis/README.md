@@ -1,69 +1,13 @@
-# Customer Data Analysis Project
-
-## 1. Project Overview
-This project focuses on analysing customer data using Python and Pandas. The goal is to understand customer distribution across different cities and perform basic data exploration.
-
-## 2. Dataset Details
-- Dataset: Customer CSV Dataset
-- Total Records: 4
-- Total Columns: 3
-- Columns: ID, Name, City
-
-## 3. Technologies Used
-- Python
-- Pandas
-- Jupyter Notebook
-
-## 4. Data Exploration
-The following operations were performed:
-- Dataset shape
-- Dataset information using `info()`
-- Statistical summary using `describe()`
-- Missing value checking
-- Duplicate row checking
-
-## 5. Business Questions
-1. How many customers are in the dataset?
-2. Which city has the highest number of customers?
-3. How many customers belong to Chennai?
-4. Which cities have customers?
-5. What percentage of customers belong to each city?
-
-## 6. Key Findings
-- Total customers: 4
-- Chennai: 2 customers (50%)
-- Mumbai: 1 customer (25%)
-- Bangalore: 1 customer (25%)
-- Missing values: 0
-- Duplicate rows: 0
-
-## 7. Project Structure
-```text
-employee-data-analysis/
-├── data/
-│   └── employees.csv
-├── notebooks/
-│   └── employee_analysis.ipynb
-└── README.md
-```
-
-## 8. Conclusion
-The analysis shows that Chennai has the highest number of customers in this dataset. This project demonstrates basic data exploration and analysis using Pandas.
-
-Note: This is a small practice dataset containing only four records.
-
-
-# Employee Data Cleaning and Analysis
+# Employee Data Analysis Project
 
 ## Project Overview
-This project focuses on cleaning and preparing the IBM HR Analytics Employee Attrition dataset using Python and Pandas.
+This project focuses on analyzing employee data using Python. It includes data cleaning, exploratory data analysis (EDA), and data visualization to identify workforce trends and insights.
 
-## Dataset Information
-- Total records: 1,470
-- Total columns: 35
-- File: `data/ibm_hr.csv`
+## Dataset
+- Dataset: IBM HR Analytics Employee Attrition Dataset
+- Total Records: 1,470 employees
 
-## Tools and Libraries
+## Technologies Used
 - Python
 - Pandas
 - NumPy
@@ -71,67 +15,73 @@ This project focuses on cleaning and preparing the IBM HR Analytics Employee Att
 - Seaborn
 - Jupyter Notebook
 
-## Data Cleaning Steps
+## Project Structure
 
-### 1. Missing Values
-- Checked missing values in all columns.
-- No missing values were found.
-- No filling or deletion was required.
+```text
+employee-data-analysis/
+│
+├── data/
+│   └── employees.csv
+│
+├── notebooks/
+│   └── employee_analysis.ipynb
+│
+├── reports/
+│   ├── figures/
+│   ├── employee_data_visualization.html
+│   └── summary.md
+│
+├── employee_data_visualization.ipynb
+├── requirements.txt
+└── README.md
+```
 
-### 2. Duplicate Records
-- Checked for duplicate records.
-- Duplicates found: 0.
-- No records were removed.
+## Installation
 
-### 3. Data Types
-- Inspected numeric and categorical columns.
-- Numeric columns were already stored as numeric types.
-- Categorical columns were already stored as text.
-- No date columns required conversion.
+1. Clone the repository:
 
-### 4. Text Standardisation
-- Applied whitespace trimming to categorical columns using `str.strip()`.
-- Existing category values were preserved.
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
 
-### 5. Outlier Detection
-- Used the Interquartile Range (IQR) method.
-- Excluded EmployeeNumber, EmployeeCount, and StandardHours from outlier detection.
-- Identified potential outliers in several numeric columns.
-- Reviewed the results and retained the records because statistical outliers are not necessarily invalid data.
+2. Navigate to the project folder:
 
-## Before and After Summary
+```bash
+cd employee-data-analysis
+```
 
-| Metric | Before | After |
-|---|---:|---:|
-| Rows | 1470 | 1470 |
-| Missing Values | 0 | 0 |
-| Duplicates | 0 | 0 |
+3. Install dependencies:
 
-## Output Files
-- `data/clean_data.csv` – cleaned dataset.
-- `data/before_after_summary.csv` – cleaning summary.
-- `notebooks/data_cleaning.ipynb` – data cleaning notebook.
+```bash
+python -m pip install -r requirements.txt
+```
+
+## How to Run
+
+1. Open the project in VS Code.
+2. Open the Jupyter notebook:
+
+`employee_data_visualization.ipynb`
+
+3. Select the Python kernel.
+4. Run all notebook cells.
+
+## Reports
+
+The final HTML report is available at:
+
+`reports/employee_data_visualization.html`
+
+The findings summary is available at:
+
+`reports/summary.md`
+
+## Project Objectives
+- Clean employee data.
+- Perform exploratory data analysis.
+- Analyze employee trends.
+- Create meaningful data visualizations.
+- Provide data-driven recommendations.
 
 ## Conclusion
-The dataset was inspected and cleaned successfully. It contains 1,470 rows and 35 columns. No missing values or duplicate records were found. Potential outliers were identified using IQR and retained after review.
-
-The cleaned dataset is ready for further exploratory data analysis (EDA).
-
-## 8. Conclusion
-
-In this project, I performed Exploratory Data Analysis (EDA)
-using Python, Pandas, and NumPy.
-
-### Key Activities
-- Calculated summary statistics.
-- Analyzed department-wise employee salaries.
-- Performed correlation analysis.
-- Answered five business questions.
-- Merged employee and department budget tables.
-- Created a pivot table.
-
-### Final Note
-The dataset contains four records. Department, gender, age,
-and salary values were added as illustrative sample data
-for practice purposes. Therefore, the findings are not
-representative of a real company's workforce.
+This project demonstrates practical Python data analysis skills and the ability to communicate insights through visualizations and reporting.
