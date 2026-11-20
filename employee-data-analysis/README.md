@@ -116,3 +116,22 @@ This project focuses on cleaning and preparing the IBM HR Analytics Employee Att
 The dataset was inspected and cleaned successfully. It contains 1,470 rows and 35 columns. No missing values or duplicate records were found. Potential outliers were identified using IQR and retained after review.
 
 The cleaned dataset is ready for further exploratory data analysis (EDA).
+
+## 8. Conclusion
+
+In this project, I performed Exploratory Data Analysis (EDA)
+using Python, Pandas, and NumPy.
+
+### Key Activities
+- Calculated summary statistics.
+- Analyzed department-wise employee salaries.
+- Performed correlation analysis.
+- Answered five business questions.
+- Merged employee and department budget tables.
+- Created a pivot table.
+
+### Final Note
+The dataset contains four records. Department, gender, age,
+and salary values were added as illustrative sample data
+for practice purposes. Therefore, the findings are not
+representative of a real company's workforce.
