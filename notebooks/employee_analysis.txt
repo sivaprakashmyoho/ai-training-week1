@@ -1,0 +1,10 @@
+import pandas as pd
+import numpy as np
+
+# Load employee dataset
+df = pd.read_csv("../data/employees.csv")
+
+# Display first five records
+df.head()
+
+
